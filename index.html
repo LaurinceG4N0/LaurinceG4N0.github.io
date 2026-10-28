@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laurince Agani</title>
+<meta name="description" content="Laurince Agani, étudiant développeur à Epitech Bénin, Cotonou.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --page: #171512; --ink: #ece6db; --tagline: #a39b8f; --accent: #d9a55b;
+    --card: #211e1a; --card-ring: #fff0dc14;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --page: #f7f4ee; --ink: #2b2722; --tagline: #857d71; --accent: #b7792a;
+      --card: #fffdf9; --card-ring: #3c280a1a;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--ink);
+    font-family: "Roboto Mono", ui-monospace, monospace; font-size: 14px; line-height: 1.7;
+  }
+  main { max-width: 48rem; margin: 0 auto; padding: 3rem 1.5rem; animation: fade 0.6s ease-out both; }
+  @media (prefers-reduced-motion: reduce) { main { animation: none; } }
+  @keyframes fade { from { opacity: 0; transform: translateY(1rem); } to { opacity: 1; transform: none; } }
+  h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  h2 { font-size: 1rem; margin: 2.5rem 0 0.75rem; }
+  .tagline { color: var(--tagline); letter-spacing: 0.025em; margin: 0; }
+  p { margin: 1rem 0 0; }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  .links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { margin: 0.4rem 0; }
+  li span { color: var(--tagline); }
+  .card {
+    background: var(--card); border-radius: 12px; padding: 1rem 1.25rem; margin-top: 1rem;
+    box-shadow: 0 0 0 1px var(--card-ring);
+  }
+  .card p:first-child { margin-top: 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Laurince Agani</h1>
+  <p class="tagline">Étudiant développeur à Cotonou, Bénin</p>
+
+  <p>J'apprends le développement à Epitech Bénin. J'aime construire des outils qui me simplifient la vie,
+    et comprendre comment ils marchent de bout en bout.</p>
+
+  <div class="links">
+    <a href="https://github.com/LaurinceG4N0">GitHub</a>
+  </div>
+
+  <h2>Projets</h2>
+  <ul>
+    <li><a href="https://github.com/LaurinceG4N0/genesis_mutation_classifier">Genesis</a>
+      <span>- classification de la pathogénicité de variants génétiques (ClinVar), avec API et démo</span></li>
+    <li><a href="https://github.com/LaurinceG4N0/headerfly">Headerfly</a>
+      <span>- création de fichiers avec en-tête personnalisé automatique</span></li>
+  </ul>
+
+  <h2 id="confidentialite">Confidentialité</h2>
+  <div class="card">
+    <p>Mes outils personnels sont privés et utilisés uniquement par moi. Ils accèdent à mon propre compte Google
+      (Gmail et Agenda) pour lire mes mails et mes événements.</p>
+    <p>Ces données sont traitées par mon serveur personnel et par les modèles d'IA qu'il utilise.
+      Elles ne sont ni partagées avec des tiers, ni vendues, ni utilisées pour de la publicité. Je peux retirer l'accès à tout moment depuis mon compte Google.</p>
+  </div>
+</main>
+</body>
+</html>
